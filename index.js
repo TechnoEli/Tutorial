@@ -1,23 +1,12 @@
-const increaseBtn = document.getElementById("increase");
-const decreaseBtn = document.getElementById("decrease");
-const resetBtn = document.getElementById("reset");
-const displayNumbers = document.getElementById("numbers");
+const roll = document.getElementById("randomButton")
+const displayRoll = document.getElementById("numberDisplay")
 
-let numb = 0;
-
-
-increaseBtn.onclick = function(){
-    numb++;
-    console.log(numb)
-    displayNumbers.textContent = numb;
-}
-decreaseBtn.onclick = function(){
-    numb--;
-    console.log(numb)
-    displayNumbers.textContent = numb;
-}
-resetBtn.onclick = function(){
-    numb = 0;
-    console.log(numb)
-    displayNumbers.textContent = numb;
+let min = 1;
+let max = 10;
+let randomNum;
+console.log("am I connected")
+roll.onclick = function(){
+    randomNum = Math.floor(Math.random() * max) + min
+    displayRoll.textContent = randomNum
+    console.log(randomNum)
 }
