@@ -1,12 +1,21 @@
-const roll = document.getElementById("randomButton")
-const displayRoll = document.getElementById("numberDisplay")
+const text = document.getElementById("text")
+let submissionAge = document.getElementById("age")
+const btnSubmit = document.getElementById("enter")
+const familiar = document.getElementById("boolean")
+let age;
 
-let min = 1;
-let max = 10;
-let randomNum;
-console.log("am I connected")
-roll.onclick = function(){
-    randomNum = Math.floor(Math.random() * max) + min
-    displayRoll.textContent = randomNum
-    console.log(randomNum)
+
+
+
+btnSubmit.onclick = function(){
+    age = submissionAge.value
+    age = Number(age)
+    console.log(age)
+    if(age > 18){
+       
+        text.textContent = "Hey. Welcome!"
+    }
+     else {
+        text.textContent = "Please leave."
+    } 
 }
