@@ -6,11 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <p>What is your age?</p>
-    <p id="text"></p>
-    <p id="boolean"></p>
-    <input id="age">
-    <button type="submit" id="enter">enter</button>
+    <h1>Welcome to your cart!</h1>
+    <input type="checkbox" id="paymentType">
+    <label>Cash or Card?</label>
+
+    <input type="radio" id="visa" name="card">
+    <label>Visa</label>
+
+    <input type="radio" id="masterCard" name="card">
+    <label>MasterCard</label>
+
+    <input type="radio" id="cash" name="card">
+    <label>Cash</label>
+
+    <button type="submit" id="submit">Continue</button>
+    <p id="paymentChoice"></p>
+    <p id="endResult"></p>
+
     <script src="index.js"></script>
 </body>
 </html>
