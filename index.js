@@ -1,25 +1,45 @@
-const checkBox = document.getElementById("paymentType")
-const visa = document.getElementById("visa")
-const masterCard = document.getElementById("masterCard")
-const cash = document.getElementById("cash")
+const actionMovie = document.getElementById("action")
+const horrorMovie = document.getElementById("horror")
+const dramaMovie = document.getElementById("drama")
+const comedyMovie = document.getElementById("comedy")
 
-const payBtn = document.getElementById("submit")
-const displayChoice = document.getElementById("paymentChoice")
-const finalize = document.getElementById("endResult")
+const results = document.getElementById("result")
 
-payBtn.onclick = function(){
-    if(checkBox.checked){
-        displayChoice.textContent = "Great!"
-    } else{
-        displayChoice.textContent = "Please choose cash or card."
+// switch(true){
+//     case actionMovie.checked: 
+//         results.textContent = "Action Movies are pretty cool!" 
+//         break;
+    
+// }
+
+actionMovie.onclick = function(){
+    switch(true){
+        case actionMovie.checked:
+            results.textContent = "Action Movies are pretty cool!"
+            break
     }
-    if(visa.checked){
-        finalize.textContent = "Great. We cover Visa!"
-    } else if(masterCard.checked){
-        finalize.textContent = "Awesome! We cover MasterCard!"
-    } else if(cash.checked) {
-        finalize.textContent = "Sure, we accept Cash as well!"
-    } else{
-        finalize.textContent = "Please choose from one of the above payment choices."
+}
+
+horrorMovie.onclick = function(){
+    switch(true){
+        case horrorMovie.checked:
+            results.textContent = "Oooh, scary movies?"
+            break;
+    }
+}
+
+dramaMovie.onclick = function(){
+    switch(true){
+        case dramaMovie.checked:
+            results.textContent = "Who doesn't enjoy a good drama?"
+            break;
+    }
+}
+
+comedyMovie.onclick = function(){
+    switch(true){
+        case comedyMovie.checked:
+            results.textContent = "Heavily underrated movies!"
+            break;
     }
 }
