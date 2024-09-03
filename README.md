@@ -19,3 +19,8 @@
   This ends day 1 of 100 days of code. Overall, I am excited to move forward and get back on track to becoming a proper web developer and software engineer.
 
 </div>
+
+<h2>Date of 09/03/2024</h2>
+<div>
+  After returning from vacation, I'm returning back to my full schedule of daily code with the exception of taking Wednesdays and Thursday's off for rest. Much as the break was enjoyable, I've greatly missed things. I also started this terms classes as well for my university. I have a lot to do and I don't plan on slacking anymore. Looking forward to today's lessons!
+</div>
